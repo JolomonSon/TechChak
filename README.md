@@ -2,11 +2,28 @@
 A Collection of Completed TechChak Projects for Reference and Development. <br>
 ***"Get real life Work Experience through Hands-on projects"***
 
-## Links
+## Setup and Installation
 Create a [techchak](https://app.techchak.com) account to start hands-on experience on job-interview-like projects. [sign up here](https://app.techchak.com/register)
 
-Clone the repository to access worked-on projects on Techchak <br>
-```git clone https://github.com/JolomonSon/TechChak.git```
+1. Clone the repository to access worked-on projects on Techchak <br>
+```bash 
+git clone https://github.com/JolomonSon/TechChak.git
+```
+2. Install virtual environment (optional)
+#### # using pip
+```bash
+pip install virtualenvwrapper -win
+```
+3. Create virtual environment
+```bash
+mkvirtualenv <name>
+```
+4. Activate virtual environment
+```bash
+workon <name>
+```
+
+
 
 
 ## Tasks
