@@ -1,5 +1,6 @@
 # from django.shortcuts import render
 import requests
+import geoip2.webservice
 
 # Create your views here.
 def weather(request):
@@ -14,3 +15,8 @@ def weather(request):
   humidity = data["main"]["humidity"]
   weather_condition = data["weather"][0]["main"]
 
+  client = geoip2.Client(client_id, client_secret)
+  location = client.city(ip_address)
+
+  context = {"temperature": temperature, "humidity": humidity, "weather_condition": weather_condition}
+  
