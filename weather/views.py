@@ -10,3 +10,7 @@ def weather(request):
 
   response = requests.get(weather_url)
   data = response.json()
+  temperature = data["main"]["temp"]
+  humidity = data["main"]["humidity"]
+  weather_condition = data["weather"][0]["main"]
+
